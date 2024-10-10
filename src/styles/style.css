@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+}
+
+img {
+    z-index: 1;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solo {
+background-color: rgb(58, 58, 58);
+margin: 0 1rem;
+padding: 1rem;
+border-radius: 1.8rem;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(58, 58, 58);
+    border-radius: 3rem;
+}
+
+.searchbar img {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.searchbar p {
+    color: white;
+    padding: 0 1rem;
+    font-size: large;
+    text-align: left;
+}
+
+.home-logo {
+    padding: 0 1rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.left-line {
+    border-left: 1px solid white;
+}
+
+.right-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right-navbar p {
+    font-size: large;
+}
+
+.sign-up {
+    color: white;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.login {
+    background-color: white;
+    padding: 1rem 2rem;
+    color: black;
+    border-radius: 2rem;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 0.5%;
+}
+
+.grid1 {
+    display: grid;
+    grid-column: 1;
+    background-color: rgb(56, 56, 56);
+    border-radius: 0.4rem;
+}
+.grid2 {
+    display: grid;
+    grid-column: 2/5;
+    background-color: rgb(56, 56, 56);
+    border-radius: 0.4rem;
+}
+
+.library {
+    display: flex;
+    justify-content: space-between; /* Fordeler pladsen mellem "open" og "add" */
+    align-items: center;
+}
+
+.open {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: large;
+}
+
+.open img {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.add {
+    display: flex;
+}
+
+.create {
+    background-color: grey;
+    width: 98%;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 1rem;
+}
+
+.create h3,
+        .specific,
+        button {
+            margin-left: 5%;
+            margin-bottom: 4%;
+            color: white;
+        }
+
+
+.artist-pic {
+    width: 15%;
+}

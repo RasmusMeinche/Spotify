@@ -1,0 +1,72 @@
+---
+import "../styles/style.css";
+import CreateCard from "../components/create-card.astro";
+import Card from "../components/card.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <main>
+      <nav class="flex">
+        <img src="/spotify_logo.png" alt="Spotify Logo" width="30px" />
+        <div class="home-logo">
+          <img
+            class="solo"
+            src="/house-chimney.png"
+            alt="Spotify Logo"
+            width="25px"
+          />
+          <div class="searchbar">
+            <img src="search.png" alt="Search symbol" width="30px" />
+            <p>What do you want to play?</p>
+            <img
+              class="left-line"
+              src="/case-study.png"
+              alt="browse symbol"
+              width="30px"
+            />
+          </div>
+        </div>
+        <div class="right-navbar">
+          <p class="sign-up">Sign up</p>
+          <p class="login">Login</p>
+        </div>
+      </nav>
+      <div class="grid">
+        <div class="grid1">
+          <div class="library">
+            <div class="open">
+              <img src="/books-medical.png" alt="layer" width="30px" />
+              <p>Your Library</p>
+            </div>
+            <div class="add">
+              <img src="/plus-small(1).png" alt="plus logo" width="30px" />
+            </div>
+          </div>
+          <CreateCard
+            header="Create your first playlist"
+            tekst="It's easy, we'll help you"
+            test="Create playliste"
+          />
+          <CreateCard
+            header="Let's find some podcasts to follow"
+            tekst="We'll keep you updated on new episodes"
+            test="Browse podcast"
+          />
+        </div>
+        <div class="grid2">
+          <Card main="Kunstner navn" under="Artist">
+            <img class="artist-pic" src="/artist.jpg" alt="Artist" />
+          </Card>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

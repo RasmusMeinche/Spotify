@@ -1,0 +1,24 @@
+---
+const header = Astro.props.header;
+const tekst = Astro.props.tekst;
+const test = Astro.props.test;
+---
+
+<div class="create">
+  <h3>{header}</h3>
+  <p class="specific">{tekst}</p>
+  <button>{test}</button>
+</div>
+
+<style>
+  button {
+    background-color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    border-style: none;
+    font-size: small;
+    font-weight: 700;
+    color: black;
+  }
+</style>
